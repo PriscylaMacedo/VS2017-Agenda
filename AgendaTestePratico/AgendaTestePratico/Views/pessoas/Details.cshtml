@@ -1,0 +1,66 @@
+﻿@model AgendaTestePratico.Models.pessoa
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalhe</h2>
+
+<div>
+    @*<h4>pessoa</h4>*@
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sobrenome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sobrenome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Data_Nascimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Data_Nascimento)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Codigo }, new { @class = "btn btn-primary" }) |
+    @Html.ActionLink("Retorne a Lista", "Index", routeValues: null, htmlAttributes: new { @class = "btn btn-primary", @role = "button" })
+</p>
